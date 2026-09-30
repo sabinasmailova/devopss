@@ -1,15 +1,14 @@
-name: Hello World CI
+name: My First CI Workflow
 
-on:
-  push:
+on: [push]
 
 jobs:
-  hello:
+  say_hello:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hello
+      - name: Say Hello Step
         run: echo "Hello from Sabina"
 
-      - name: Show OS
+      - name: Show OS Info Step
         run: uname -a
